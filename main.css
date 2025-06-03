@@ -1,0 +1,77 @@
+body {
+	width: 1280px;
+	height: 720px;
+	background-color: black;
+}
+
+* {
+	font-family: monospace;
+	margin: 0;
+	border: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: white;
+	margin: 0.5em;
+}
+
+button {
+	width: 100%;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+canvas#renderer {
+	width: 50%;
+	image-rendering: crisp-edges;
+	background-image: url('./background.webp');
+	margin-inline: 25%;
+}
+
+input[type=text] {
+	width: 125px;
+}
+
+input[type=number] {
+	width: 50px;
+}
+
+a#saveOutput, img#frame {
+	display: none;
+}
+
+div:not(.container) {
+	border: 2px solid;
+	border-color: white;
+}
+
+div.container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+div.editor {
+	overflow: scroll;
+	scroll-behavior: smooth;
+	padding: 12px;
+	border-right-width: 1px;
+}
+
+div.display {
+	overflow: scroll;
+	scroll-behavior: smooth;
+	padding: 12px;
+	border-left-width: 1px;
+	height: 663px;
+}
+
+div.version {
+	text-align: center;
+	border-bottom-width: 0px;
+}
