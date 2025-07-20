@@ -2,21 +2,12 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-color: black;
-}
-
-* {
-	font-family: monospace;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	margin: 0;
 	border: none;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+p, h1, h2, h3, h4, h5, h6 {
 	color: white;
 	margin: 0.5em;
 }
@@ -31,23 +22,12 @@ canvas#renderer {
 	width: 50%;
 	image-rendering: crisp-edges;
 	background-image: url('./background.webp');
+	margin: 50px;
 	margin-inline: 25%;
 }
 
 hr {
 	border: 1px white solid;
-}
-
-input[type=text] {
-	width: 200px;
-}
-
-input[type=number] {
-	width: 50px;
-}
-
-a#saveOutput, img#frame {
-	display: none;
 }
 
 div:not(.container) {
@@ -62,20 +42,8 @@ div.container {
 	grid-template-rows: 100vh;
 }
 
-div.editor {
+div.container > div {
 	overflow: scroll;
 	scroll-behavior: smooth;
 	padding: 12px;
-	border-right-width: 1px;
-}
-
-div.display {
-	overflow: scroll;
-	scroll-behavior: smooth;
-	padding: 12px;
-	border-left-width: 1px;
-}
-
-div.version {
-	text-align: center;
 }

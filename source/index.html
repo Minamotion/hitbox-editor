@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
     <script src="./main.js"></script>
-    <title>Hitbox Editor v1.1.0</title>
-    <img id="frame" />
-    <a id="saveOutput" download></a>
+    <title>Hitbox Editor v1.1.2</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="editor">
+        <div>
+            <!-- Hitbox Section -->
             <div><h1>Hitbox Editor</h1></div>
             <h2>Hitbox:</h2>
             <p>Hitbox's X: <input type="number" min="0" id="hitboxX" /></p>
@@ -21,26 +20,32 @@
             <p>Hitbox's Width: <input type="number" min="1" id="hitboxWidth" /></p>
             <p>Hitbox's Height: <input type="number" min="1" id="hitboxHeight" /></p>
             <hr>
+            <!-- Frame Section -->
             <h2>Frame:</h2>
             <p>Frame's Width: <input type="number" min="1" id="frameWidth" /></p>
             <p>Frame's Height: <input type="number" min="1" id="frameHeight" /></p>
             <p>Frame: <input type="file" id="frameFileSource" accept="image/*" /></p>
             <p>Frame URL: <input type="text" id="frameSource" /></p>
             <hr>
+            <!-- Data Section -->
             <h2>Data:</h2>
             <button id="reset">Reset to default</button>
             <button id="save">Save data</button>
             <p>Load data: <input type="file" id="load" accept="application/json"></input></p>
             <hr>
+            <!-- Version Section -->
             <h2>Version</h2>
-            <div class="version">
-                <p>version 1.1.0</p>
-            </div>
+            <p>v1.1.2</p>
+            <p><a href="https://github.com/Minamotion/hitbox-editor">Github Repository</a></p>
         </div>
-        <div class="display">
+        <div>
             <div><h1>Hitbox Visualizer</h1></div>
             <canvas id="renderer"></canvas>
         </div>
+    </div>
+    <div hidden>
+        <img id="frame" />
+        <a id="saveOutput" download></a>
     </div>
 </body>
 
