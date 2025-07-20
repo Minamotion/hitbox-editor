@@ -128,6 +128,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 		inputs.frameSource.value = await blobToBase64(inputs.frameFileSource.files[0])
 		data.frame.source = inputs.frameSource.value
 		frame.src = data.frame.source
+		inputs.frameFileSource.value = ""
 	})
 
 	inputs.reset.addEventListener("click", async () => {

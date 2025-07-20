@@ -1,6 +1,6 @@
 body {
-	width: 1280px;
-	height: 720px;
+	width: 100vw;
+	height: 100vh;
 	background-color: black;
 }
 
@@ -34,8 +34,12 @@ canvas#renderer {
 	margin-inline: 25%;
 }
 
+hr {
+	border: 1px white solid;
+}
+
 input[type=text] {
-	width: 125px;
+	width: 200px;
 }
 
 input[type=number] {
@@ -49,11 +53,13 @@ a#saveOutput, img#frame {
 div:not(.container) {
 	border: 2px solid;
 	border-color: white;
+	margin: 4px;
 }
 
 div.container {
 	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 50vw 50vw;
+	grid-template-rows: 100vh;
 }
 
 div.editor {
@@ -68,10 +74,8 @@ div.display {
 	scroll-behavior: smooth;
 	padding: 12px;
 	border-left-width: 1px;
-	height: 663px;
 }
 
 div.version {
 	text-align: center;
-	border-bottom-width: 0px;
 }

@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./main.css">
-        <script src="./main.js"></script>
-        <img id="frame" />
-        <a id="saveOutput" download></a>
-    </head>
-    <body>
-        <div class="version">
-            <p>version 1.0.0.0</p>
-        </div>
-        <div class="container">
-            <div class="editor">
-                <h1>Hitbox Editor</h1>
-                <h2>Hitbox:</h2>
-                <p>Hitbox's X: <input type="number" min="0" id="hitboxX"/></p>
-                <p>Hitbox's Y: <input type="number" min="0" id="hitboxY"/></p>
-                <p>Hitbox's Width: <input type="number" min="1" id="hitboxWidth"/></p>
-                <p>Hitbox's Height: <input type="number" min="1" id="hitboxHeight"/></p>
-                <h2>Frame:</h2>
-                <p>Frame's Width: <input type="number" min="1" id="frameWidth"/></p>
-                <p>Frame's Height: <input type="number" min="1" id="frameHeight"/></p>
-                <p>Frame: <input type="file" id="frameFileSource" accept="image/*" /></p>
-                <p>Frame URL: <input type="text" id="frameSource"/></p>
-                <h2>Data:</h2>
-                <button id="reset">Reset to default</button>
-                <button id="save">Save data</button>
-                <p>Load data: <input type="file" id="load" accept="application/json"></input></p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js"></script>
+    <title>Hitbox Editor v1.1.0</title>
+    <img id="frame" />
+    <a id="saveOutput" download></a>
+</head>
+
+<body>
+    <div class="container">
+        <div class="editor">
+            <div><h1>Hitbox Editor</h1></div>
+            <h2>Hitbox:</h2>
+            <p>Hitbox's X: <input type="number" min="0" id="hitboxX" /></p>
+            <p>Hitbox's Y: <input type="number" min="0" id="hitboxY" /></p>
+            <p>Hitbox's Width: <input type="number" min="1" id="hitboxWidth" /></p>
+            <p>Hitbox's Height: <input type="number" min="1" id="hitboxHeight" /></p>
+            <hr>
+            <h2>Frame:</h2>
+            <p>Frame's Width: <input type="number" min="1" id="frameWidth" /></p>
+            <p>Frame's Height: <input type="number" min="1" id="frameHeight" /></p>
+            <p>Frame: <input type="file" id="frameFileSource" accept="image/*" /></p>
+            <p>Frame URL: <input type="text" id="frameSource" /></p>
+            <hr>
+            <h2>Data:</h2>
+            <button id="reset">Reset to default</button>
+            <button id="save">Save data</button>
+            <p>Load data: <input type="file" id="load" accept="application/json"></input></p>
+            <hr>
+            <h2>Version</h2>
+            <div class="version">
+                <p>version 1.1.0</p>
             </div>
-            <div class="display">
-                <h1>Hitbox Visualizer</h1>
-                <canvas id="renderer"></canvas>
-            </div>
         </div>
-    </body>
+        <div class="display">
+            <div><h1>Hitbox Visualizer</h1></div>
+            <canvas id="renderer"></canvas>
+        </div>
+    </div>
+</body>
+
 </html>
